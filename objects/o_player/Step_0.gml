@@ -49,7 +49,7 @@ hsp = move * walkspd;
 
 vsp = vsp + grv;
 
-if (place_meeting(x, y + 1, o_platform) && global.PRESSED_J)
+if (place_meeting(x, y + 1, o_plat) && global.PRESSED_J)
 {
 	vsp = -10;
 	audio_play_sound(snd_jump, 1, false);
@@ -59,9 +59,9 @@ if (place_meeting(x, y + 1, o_platform) && global.PRESSED_J)
 
 #region horizontal collision
 
-if (place_meeting(x + hsp, y, o_platform)) 
+if (place_meeting(x + hsp, y, o_wall_l)) 
 {
-	while (!place_meeting(x + sign(hsp), y, o_platform))
+	while (!place_meeting(x + sign(hsp), y, o_plat))
 	{
 		x += sign(hsp);
 	}
@@ -74,9 +74,9 @@ x += hsp;
 
 #region vertical collision
 
-if (place_meeting(x, y + vsp, o_platform)) 
+if (place_meeting(x, y + vsp, o_plat)) 
 {
-	while (!place_meeting(x, y + sign(vsp), o_platform))
+	while (!place_meeting(x, y + sign(vsp), o_plat))
 	{
 		y += sign(vsp);
 	}
@@ -99,7 +99,7 @@ if (global.PRESSED_M)
 
 #region animations
 
-if (!place_meeting(x, y + 1, o_platform))
+if (!place_meeting(x, y + 1, o_plat))
 {
 	sprite_index = s_player_jump;
 	image_speed = 0;
@@ -118,6 +118,6 @@ else
 	}
 }
 
-if (hsp > 0) image_xscale = -1; else image_xscale = 1;
+if (hsp < 0) image_xscale = 1; else image_xscale = -1; // todo: fix flip on key release
 
 #endregion

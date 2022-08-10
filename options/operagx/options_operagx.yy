@@ -1,6 +1,6 @@
 {
   "option_operagx_version": "0.0.0.0",
-  "option_operagx_next_version": "0.0.0.1",
+  "option_operagx_next_version": "0.0.0.2",
   "option_operagx_game_name": "food fight",
   "option_operagx_interpolate_pixels": true,
   "option_operagx_scale": 0,

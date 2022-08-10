@@ -1,2 +1,2 @@
 /// @description Insert description here
-room_goto(Room1);
+room_goto(r_level_1);
