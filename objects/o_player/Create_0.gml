@@ -2,7 +2,7 @@
 hsp = 0; // horizontal speed
 vsp = 0; // vertical speed
 grv = 0.3; // gravity
-walkspd = 4;  // walk speed
+walkspd = 10;  // walk speed
 
 #region setup input variables
 

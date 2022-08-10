@@ -51,7 +51,7 @@ vsp = vsp + grv;
 
 if (place_meeting(x, y + 1, o_platform) && global.PRESSED_J)
 {
-	vsp = -6;
+	vsp = -10;
 	audio_play_sound(snd_jump, 1, false);
 }
 
