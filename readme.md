@@ -2,6 +2,8 @@ food fight gml
 ---
 > fight through assorted *spoiled* to find a way to save **chill town**.
 
+also on: [itch.io](https://solarisboylabs.itch.io/food-fight)
+
 ![menu screen](./menu-screen.png)
 
 instructions:
