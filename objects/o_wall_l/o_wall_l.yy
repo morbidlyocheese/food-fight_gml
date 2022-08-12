@@ -6,10 +6,7 @@
   "solid": true,
   "visible": true,
   "managed": true,
-  "spriteMaskId": {
-    "name": "s_plat",
-    "path": "sprites/s_plat/s_plat.yy",
-  },
+  "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,

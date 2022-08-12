@@ -51,7 +51,7 @@ vsp = vsp + grv;
 
 if (place_meeting(x, y + 1, o_plat) && global.PRESSED_J)
 {
-	vsp = -10;
+	vsp = -12;
 	audio_play_sound(snd_jump, 1, false);
 }
 
@@ -61,7 +61,7 @@ if (place_meeting(x, y + 1, o_plat) && global.PRESSED_J)
 
 if (place_meeting(x + hsp, y, o_wall_l)) 
 {
-	while (!place_meeting(x + sign(hsp), y, o_plat))
+	while (!place_meeting(x + sign(hsp), y, o_wall_l))
 	{
 		x += sign(hsp);
 	}
@@ -121,3 +121,4 @@ else
 if (hsp < 0) image_xscale = 1; else image_xscale = -1; // todo: fix flip on key release
 
 #endregion
+
